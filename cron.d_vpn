@@ -1,0 +1,5 @@
+SHELL=/bin/bash
+PATH=/sbin
+#MAILTO=""
+* * * * * root [[ ! -e /var/run/ssh-myvpn-tunnel-control-809 ]] && (ifdown tap0; ifup tap0);  
+
